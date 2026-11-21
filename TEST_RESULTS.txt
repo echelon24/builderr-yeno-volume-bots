@@ -1,0 +1,14 @@
+PASS: first look (no persistence yet) -> {'action': 'HOLD'}
+PASS: persistent gap -> {'action': 'BUY', 'outcome': 'YES', 'maxCashUsd': 4.96375}
+  size check: maxCashUsd=4.96375 (house bot spent ~2.60)
+  decide latency: 1.11 ms (limit 200 ms)
+PASS: stale reference -> {'action': 'HOLD'}
+PASS: provisional target -> {'action': 'HOLD'}
+PASS: small gap -> {'action': 'HOLD'}
+PASS: negative gap side -> {'action': 'BUY', 'outcome': 'NO', 'maxCashUsd': 4.96375}
+PASS: take profit -> {'action': 'SELL'}
+PASS: small loss, time remains -> {'action': 'HOLD'}
+PASS: forced exit near close -> {'action': 'SELL'}
+PASS: too early to enter -> {'action': 'HOLD'}
+PASS: final seconds entry -> {'action': 'HOLD'}
+FAILURES: none
